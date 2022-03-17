@@ -1,12 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Olá, mundo!</title>
+    <script>
+        let a = "carro";
+        const c = "casa";
+
+        function clickNoBotao() {
+
+            alert("Olá, mundo!");
+        }
+
+        function atualizaTexto() {
+
+            let input = document.getElementById("meuinput");
+            let p = document.getElementById("para");
+
+            p.textContent = input.value;
+
+            console.log("oi");
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #eee;
+        }
+
+        h1 {
+            font-family: tahoma;
+            color: coral;
+            font-size: 32px;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            border: solid 2px black;
+            padding: 2px;
+            margin-top: 10px;
+            border-bottom: 10px;
+        }
+
+        .margem-minima {
+            margin-top: 10px;
+            border-bottom: 10px;
+        }
+
+        .margem-minima input, select, button {
+            width: 50vw;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div>
+        <h1>Meu primeiro site</h1>
+        <h2>Olá, mundo!</h2>
+        <p id="para">Isso é um parágrafo</p>
+        <span>Isso é um span com informação qualquer</span>
+    </div>
+
+    <img src="imagem-4.png" />
+
+    <div class="margem-minima">
+        <a href="https://github.com/laislucasss">Meu github</a>
+    </div>
+
+    <div class="margem-minima">
+        <input id="meuinput" type="text" oninput="atualizaTexto()" />
+    </div>
+
+    <div class="margem-minima">
+        <select>
+            <option>Opção 1</option>
+            <option>Opção 2</option>
+            <option>Opção 3</option>
+        </select>
+    </div>
+
+    <div class="margem-minima">
+        <button onclick="clickNoBotao()">Isso é um botão</button>
+    </div>
+
 </body>
+
 </html>
